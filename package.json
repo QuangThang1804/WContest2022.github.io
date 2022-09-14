@@ -1,0 +1,19 @@
+{
+  "name": "wcontest2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "@material-tailwind/html": "^1.2.1",
+    "css.gg": "^2.0.0",
+    "flowbite": "^1.5.3"
+  }
+}
