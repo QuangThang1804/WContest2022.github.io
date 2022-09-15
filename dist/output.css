@@ -3546,7 +3546,7 @@ p {
   }
 
   .advisory-and-jury .member-position-bantochuc{
-    padding: 8px 64px;
+    padding: 8px 24px;
   }
 
   .advisory-and-jury .about-member-normal,
@@ -3590,7 +3590,8 @@ p {
   }
 
   .donors .logo-truong {
-    height: 52px;
+    height: 42px;
+    padding: 0 10px;
   }
 
   .img-donors, .donors .logo-tochuc {
