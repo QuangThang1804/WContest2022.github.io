@@ -3121,7 +3121,7 @@ p {
  .giaithuong {
   user-select: none;
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 0 20px;
 }
 
 .giaithuong .hang1 {
@@ -3149,7 +3149,7 @@ p {
 
 .giaithuong .hang1 ul {
   /* width: 100%; */
-  margin: 0 37%;
+  margin: 0 30%;
   text-align: justify;
 }
 
@@ -3159,7 +3159,7 @@ p {
 
 .giaithuong .row2 ul{
   text-align: justify;
-  margin: 0 20%;
+  margin: 0 8%;
 }
 
 .giaithuong .hang3 ul {
@@ -3538,7 +3538,7 @@ p {
 
   .advisory-and-jury .about-member-normal,
   .donors .row3{
-    margin: 0 8px 16px;
+    padding: 0 8px 16px;
     width: 45%;
   }
 
@@ -3642,4 +3642,33 @@ p {
     padding: 8px 1px;
     height: 36px;
   }
+}
+
+@media screen and (min-width: 100px) and (max-width:400px) {
+  .criteria,
+  .advisory-and-jury .about-paragraph{
+    margin: 32px;
+  }
+
+  .donors .fix-100{
+    padding: 13px 0;
+  }
+
+  .giaithuong .row2 .phanthuong{
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+  .advisory-and-jury .about-member-bantochuc,
+  .advisory-and-jury .about-member-normal{
+    width: 100%;
+  }
+
+  .donors{
+    margin: 64px 0;
+  }
+
+  .footer {
+    padding: 32px;
+}
 }
