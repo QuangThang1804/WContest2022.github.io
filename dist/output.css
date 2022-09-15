@@ -3193,7 +3193,7 @@ p {
 }
 
 .list-member {
-  padding-bottom: 16px;
+
   border-radius: 18px;
   background-color: #8EC5FC;
   background-image: linear-gradient(62deg, #8EC5FC 12%, #E0C3FC 60%, #ffffff 100%);
@@ -3268,7 +3268,7 @@ p {
   .quyenloi .row2 {
     float: left;
     width: 45%;
-    margin: 0 28px 16px;
+    padding: 0 28px 16px;
   }
 
   .quyenloi .header-quyenloi {
@@ -3280,7 +3280,7 @@ p {
 
   .quyenloi .noi_dung_quyen_loi {
     margin: 8px 0;
-    padding: 0 32px;
+    padding: 0 18px;
     border-left: 2px solid rgb(26 86 219);
   }
   /* End Quyền lợi */
@@ -3396,7 +3396,15 @@ p {
   }
 
 
-@media only screen and (max-width: 1669px) {
+@media only screen and (min-width: 1367px){
+  .giaithuong .hang1 ul{
+    margin: 0 37%;
+  }
+
+  .giaithuong .row2 ul {
+    margin: 0 20%;
+  }
+
   .advisory-and-jury .about-member,
   .donors .row3{
     margin: 0 18px 16px;
@@ -3433,7 +3441,7 @@ p {
   }
 
   .quyenloi .row2 {
-    margin: 0 18px 16px;
+    padding: 0 18px 16px;
   }
 
   .img-donors, .donors .logo-tochuc {
@@ -3453,7 +3461,7 @@ p {
 }
 
 /*Ipad ngang(1024 x 768)*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (min-width: 769px ){
   .criteria {
     margin: 32px 32px;
   }
@@ -3471,6 +3479,7 @@ p {
   .advisory-and-jury .about-member,
   .donors .row3{
     margin: 0 8px 16px;
+    min-height: 222px;
   }
 
   .about-member .member-position {
@@ -3480,6 +3489,10 @@ p {
 
   .advisory-and-jury .about-paragraph {
     margin: 16px 32px;
+  }
+
+  .quyenloi .header-quyenloi {
+
   }
 
   .img-donors, .donors .logo-tochuc {
@@ -3538,8 +3551,9 @@ p {
 
   .advisory-and-jury .about-member-normal,
   .donors .row3{
-    padding: 0 8px 16px;
+    padding: 32px 8px 8px;
     width: 45%;
+    min-height: 222px;
   }
 
   .advisory-and-jury .fix-768{
@@ -3560,13 +3574,19 @@ p {
     width: 100%;
   }
 
+  .donors .row3{
+    min-height: max-content;
+    width: 100%;
+    padding-top: 0;
+  }
+
   .donors .nhataitrobac {
-    margin: 16px 0 16px;
     width: 100%;
   }
 
   .donors .header-name-donors {
     font-size: 16px;
+    margin: 16px 0;
   }
 
   .donors .logo-truong {
@@ -3615,6 +3635,7 @@ p {
   .giaithuong .row2 .phanthuong,
   .advisory-and-jury .about-member-bantochuc {
     margin: 0px 12px 16px;
+    width: 100%;
   }
 
   .advisory-and-jury .fix-member-name480{
@@ -3623,7 +3644,7 @@ p {
 
   .advisory-and-jury .about-member-normal {
     margin: 0 12px 16px;
-    width: 45%;
+    width: 100%;
   }
 
   .advisory-and-jury .fix-768 {
@@ -3639,9 +3660,21 @@ p {
   }
   
   .img-donors, .donors .logo-tochuc {
-    padding: 8px 1px;
-    height: 36px;
+    padding: 8px 12px;
+    height: 46px;
   }
+
+  .donors .row3 {
+    width: 100%;
+    min-height: max-content;
+    padding: 8px;
+    margin: 8px;
+  }
+
+  .footer{
+    padding: 32px;
+  }
+
 }
 
 @media screen and (min-width: 100px) and (max-width:400px) {
