@@ -3096,10 +3096,28 @@ p {
   color: rgb(26 35 126);
 }
 
+.criteria,
+.advisory-and-jury,
+.quyenloi,
+.donors{
+  user-select: none;
+}
+
 /* begin 4 */
 .criteria {
   margin: 40px 128px;
   line-height: 24px;
+}
+
+.criteria .row2 {
+  /* min-height: 300px; */
+  padding: 40px 6%;
+  width: 50%;
+  float: left;
+}
+
+.criteria .animation{
+  padding: 0 8%;
 }
 
 .criteria .ti-check{
@@ -3171,7 +3189,10 @@ p {
 
 .advisory-and-jury {
   margin: 32px 0px 0;
+  user-select: none;
 }
+
+  
 
 .advisory-and-jury .header-advisory-and-jury{
   margin: 16px 0;
@@ -3190,6 +3211,11 @@ p {
   width: 45%;
   text-align: center;
   margin: 0 28px 16px;
+}
+
+.giaithuong .row2 .phanthuong{
+  width: 50%;
+  margin: 0 0px 16px;
 }
 
 .list-member {
@@ -3241,12 +3267,16 @@ p {
 }
 
 
-.advisory-and-jury .member-position-bantochuc,
 .advisory-and-jury .member-name-bantochuc,
 .about-member .member-position,
 .about-member .member-name{
     font-size: 16px;
     padding:12px 0 0;
+}
+
+.member-position-bantochuc,
+.about-member .member-position{
+  padding-top: 0;
 }
 
 .advisory-and-jury p {
@@ -3267,10 +3297,8 @@ p {
 
   .quyenloi .row2 {
     float: left;
-    width: 45%;
-    padding: 0 28px 16px;
+    width: 50%;
   }
-
   .quyenloi .header-quyenloi {
     margin: 16px 0;
     padding: 8px 0;
@@ -3315,7 +3343,7 @@ p {
   
   .donors .header-name-donors {
     font-size: 24px;
-    margin: 32px 0;
+    margin: 24px 0 8px;
     font-weight: bold;
   }
   
@@ -3364,6 +3392,10 @@ p {
     color: #a9b3bb;
   }
 
+  .footer a:hover{
+    opacity: 0.6;
+  }
+
   .footer .box-icon {
     line-height: 1.6;
   }
@@ -3397,12 +3429,17 @@ p {
 
 
 @media only screen and (min-width: 1367px){
+  .criteria .content-criteria {
+    min-height: 300px;
+    padding: 65px 6%;
+}
+
   .giaithuong .hang1 ul{
     margin: 0 37%;
   }
 
   .giaithuong .row2 ul {
-    margin: 0 20%;
+    margin: 0 24%;
   }
 
   .advisory-and-jury .about-member,
@@ -3415,7 +3452,7 @@ p {
   }
 
   .about-member .member-position{
-    padding: 8px 4.13%;
+    padding: 0px 4.13%;
   }
 }
 
@@ -3426,6 +3463,14 @@ p {
   .advisory-and-jury .about-member-bantochuc,
   .donors .row3 {
     margin: 0 16px 16px;
+  }
+
+  .giaithuong .row2 .phanthuong{
+    margin: 0 0 16px;
+  }
+
+  .giaithuong .row2 ul {
+    margin: 0 12%;
   }
 
   .advisory-and-jury .about-member{
@@ -3471,7 +3516,6 @@ p {
   }
 
   .advisory-and-jury .about-member .hang2,
-  .giaithuong .row2 .phanthuong,
   .advisory-and-jury .about-member-bantochuc {
     margin: 0 12px 16px;
   }
@@ -3483,7 +3527,7 @@ p {
   }
 
   .about-member .member-position {
-    padding: 8px 8px;
+    padding: 0px 8px;
   }
 
 
@@ -3527,6 +3571,10 @@ p {
     text-align: justify;
   }
 
+  .criteria .content-criteria{
+  padding: 40px 2%;
+  }
+
   .giaithuong .hang1 ul {
     margin: 0 32%;
   }
@@ -3540,7 +3588,6 @@ p {
   }
 
   .advisory-and-jury .about-member .hang2,
-  .giaithuong .row2 .phanthuong,
   .advisory-and-jury .about-member-bantochuc {
     margin: 0px 8px 16px;
   }
@@ -3567,7 +3614,7 @@ p {
 
 
   .about-member .member-position {
-    padding: 8px 8px;
+    padding: 0px 8px;
   }
 
   .quyenloi .row2 {
@@ -3628,9 +3675,22 @@ p {
     min-height: 40px;
   }
 
-  .giaithuong .hang1 ul {
-    margin: 0 20%;
+  .criteria .content-criteria {
+    padding: 16px 0;
+    width: 100%;
   }
+
+  .criteria .animation{
+    display: none;
+  }
+
+  .giaithuong .hang1 ul {
+    margin: 0 12%;
+  }
+
+  .advisory-and-jury .about-paragraph {
+    margin: 32px 32px;
+}
 
   .advisory-and-jury .about-member .hang2,
   .giaithuong .row2 .phanthuong,
@@ -3653,7 +3713,7 @@ p {
   }
 
   .donors{
-    margin: 64px 16px 64px;
+    margin: 64px 0;
   }
 
   .donors .header-name-donors{
@@ -3661,7 +3721,7 @@ p {
   }
   
   .img-donors, .donors .logo-tochuc {
-    padding: 8px 12px;
+    padding: 8px 24px;
     height: 46px;
   }
 
@@ -3682,6 +3742,10 @@ p {
   .criteria,
   .advisory-and-jury .about-paragraph{
     margin: 32px;
+  }
+
+  .quyenloi {
+    padding: 0 6%;
   }
 
   .donors .fix-100{
