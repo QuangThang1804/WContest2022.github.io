@@ -2349,12 +2349,12 @@ p {
   background-position: center;
 }
 
-.stroke-sky-500 {
-  stroke: #0ea5e9;
-}
-
 .stroke-cyan-500 {
   stroke: #06b6d4;
+}
+
+.stroke-sky-500 {
+  stroke: #0ea5e9;
 }
 
 .p-2 {
@@ -2441,12 +2441,16 @@ p {
   padding-top: 0px;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -2563,6 +2567,16 @@ p {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(240 82 82 / var(--tw-text-opacity));
+}
+
+.text-sky-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -2571,11 +2585,6 @@ p {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
-}
-
-.text-sky-500 {
-  --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
@@ -2681,10 +2690,6 @@ p {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:stroke-sky-700:hover {
-  stroke: #0369a1;
-}
-
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity));
@@ -2788,12 +2793,12 @@ p {
           animation: bounce 1s infinite;
 }
 
-.group:hover .group-hover\:stroke-sky-700 {
-  stroke: #0369a1;
-}
-
 .group:hover .group-hover\:stroke-cyan-700 {
   stroke: #0e7490;
+}
+
+.group:hover .group-hover\:stroke-sky-700 {
+  stroke: #0369a1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -3055,11 +3060,6 @@ p {
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .lg\:pb-10 {
