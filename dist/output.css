@@ -3094,8 +3094,15 @@ p {
   height: 200px;
 }
 
-#countdown{
-
+.background-web {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  /* padding-left: 40px; */
+  /* background-color: #16BDCA; */
 }
 
 .header{
@@ -3579,6 +3586,7 @@ p {
 
   #main {
     margin: 0px -36px;
+    z-index: 0;
   }
 
   .criteria,
