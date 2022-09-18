@@ -3464,6 +3464,10 @@ p {
   .about-member .member-position{
     padding: 0px 4.13%;
   }
+
+  .quyenloi .row2 {
+    padding: 0 18px 16px;
+  }
 }
 
 /*Máy tính dell(1366 x 768)*/
