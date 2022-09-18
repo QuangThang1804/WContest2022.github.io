@@ -1950,8 +1950,8 @@ p {
   margin-right: auto;
 }
 
-.-mt-8 {
-  margin-top: -2rem;
+.\!-mt-8 {
+  margin-top: -2rem !important;
 }
 
 .ml-1\.5 {
@@ -1964,10 +1964,6 @@ p {
 
 .mb-1 {
   margin-bottom: 0.25rem;
-}
-
-.\!-mt-8 {
-  margin-top: -2rem !important;
 }
 
 .block {
@@ -2036,6 +2032,14 @@ p {
 
 .h-4 {
   height: 1rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-7 {
+  height: 1.75rem;
 }
 
 .min-h-screen {
@@ -2117,12 +2121,6 @@ p {
 
 .rotate-180 {
   --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-50 {
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2240,6 +2238,10 @@ p {
   white-space: nowrap;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -2250,10 +2252,6 @@ p {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-l-lg {
@@ -2429,6 +2427,10 @@ p {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pr-4 {
