@@ -3102,7 +3102,6 @@ p {
     width: 100%;
   }
 }
-
 /*css của thăng*/
 
 
@@ -3356,6 +3355,7 @@ p {
 
   /* begin 9 */
   .donors {
+    margin: 32px 0 64px;
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
