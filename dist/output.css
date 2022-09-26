@@ -3089,4 +3089,13 @@ p {
   .lg\:pt-20 {
     padding-top: 5rem;
   }
+<<<<<<< HEAD
+=======
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-full {
+    width: 100%;
+  }
+>>>>>>> d18e46cc57d0bf8bdd8c8f61c32966535df1c584
 }
