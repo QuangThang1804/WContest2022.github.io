@@ -1,308 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Phần đầu -->
+<!-- Phần đầu -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WContest</title>
-    <link rel="stylesheet" href="./dist/output.css">
-    <link href="./icon/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
-    <link href="./icon/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
-    <link href="./icon/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/style.css">
-    <meta property="og:image" content="./img/Timeline.png">
-    <meta property="og:title" content="WContest: Web for Education">
-    <link rel="shortcut icon" href="./img/FaviconWContest.png" type="image/x-icon">
-    <!-- Phần thân -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WContest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link href="./icon/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+  <link href="./icon/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+  <link href="./icon/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/style.css">
+  <meta property="og:image" content="./img/Timeline.png">
+  <meta property="og:title" content="WContest: Web for Education">
+  <link rel="shortcut icon" href="./img/FaviconWContest.png" type="image/x-icon">
+
+  <!-- Phần thân -->
 </head>
+
 <body class=>
-    <!-- bg-gray-100 antialiased -->
-    <!-- Begin nav -->  
+  <!-- bg-gray-100 antialiased -->
+  <!-- Begin nav -->
   <div class="w-scn-xl xl:w-full fixed z-50 shadow-md">
     <nav class="p-2 bg-white border-gray-200">
-        <div class="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="#" class="flex items-center">
-            <img src="./img/FaviconWContest.png" class="h-7 sm:h-10 rounded-full ring-2 ring-blue-300"
-              alt="HAMIC Logo">
-            <span class="self-center text-xl font-semibold whitespace-nowrap pl-2">WContest</span>
-          </a>
-          <div class="flex md:order-2">
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 hover:ring-4 hover:ring-blue-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"><a href=" https://bit.ly/dangkyWContest202" class="text-white">Đăng ký</a></button>
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-            </button>
-          </div>
-          <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
-              <li>
-                <a href="#GioiThieu" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Giới thiệu</a>
-              </li>
-              <li class="group">
-                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Thể lệ<svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdownNavbar" class="invisible group-focus-within:visible z-10 sm:w-44 w-full  font-normal bg-white rounded divide-y divide-gray-100 shadow block" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383px, 66px, 0px);">
-                      <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                        <li>
-                          <a href="#TheLe" class="block py-2 px-4 hover:bg-gray-100">Chủ đề cuộc thi</a>
-                        </li>
-                        <li>
-                          <a href="#TheLe" class="block py-2 px-4 hover:bg-gray-100">Hình thức tham gia</a>
-                        </li>
-                        <li>
-                            <a href="#TieuChi" class="block py-2 px-4 hover:bg-gray-100">Tiêu chí đánh giá</a>
-                        </li>
-                      </ul>
-                  </div>
-              </li>
-              <li>
-                <a href="#GiaiThuong" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Giải thưởng</a>
-              </li>
-              <li class="group">
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Ban Tổ chức<svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdownNavbar1" class="invisible group-focus-within:visible z-10 sm:w-44 w-full font-normal bg-white rounded divide-y divide-gray-100 shadow block" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383px, 66px, 0px);">
-                      <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                        <li>
-                          <a href="#BTC" class="block py-2 px-4 hover:bg-gray-100">Ban Tổ chức</a>
-                        </li>
-                        <li>
-                          <a href="#BCV" class="block py-2 px-4 hover:bg-gray-100">Ban Cố vấn</a>
-                        </li>
-                        <li>
-                          <a href="#" class="block py-2 px-4 hover:bg-gray-100">Ban Giám khảo</a>
-                        </li>
-                      </ul>
-                  </div>
-              </li>
-              <li>
-                <a href="#DoiTac" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Đơn vị đối tác</a>
-              </li>
-              <li>
-                <a href="#FAQ" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">FAQ</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="#" class="flex items-center">
+          <img src="./img/FaviconWContest.png" class="h-7 sm:h-10 rounded-full ring-2 ring-blue-300" alt="HAMIC Logo">
+          <span class="self-center text-xl font-semibold whitespace-nowrap pl-2">WContest</span>
+        </a>
+        <div class="flex md:order-2">
+          <button type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 hover:ring-4 hover:ring-blue-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"><a
+              href=" https://bit.ly/dangkyWContest202" class="text-white">Đăng ký</a></button>
+          <button data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
         </div>
-      </nav>
-</div>     
-    <!-- End nav -->
-  
-    <!-- Begin content -->
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+            <li>
+              <a href="#GioiThieu"
+                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                aria-current="page">Giới thiệu</a>
+            </li>
+            <li class="group">
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Thể
+                lệ<svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar"
+                class="invisible group-focus-within:visible z-10 sm:w-44 w-full  font-normal bg-white rounded divide-y divide-gray-100 shadow block"
+                data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383px, 66px, 0px);">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#TheLe" class="block py-2 px-4 hover:bg-gray-100">Chủ đề cuộc thi</a>
+                  </li>
+                  <li>
+                    <a href="#TheLe" class="block py-2 px-4 hover:bg-gray-100">Hình thức tham gia</a>
+                  </li>
+                  <li>
+                    <a href="#TieuChi" class="block py-2 px-4 hover:bg-gray-100">Tiêu chí đánh giá</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#GiaiThuong"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Giải
+                thưởng</a>
+            </li>
+            <li class="group">
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1"
+                class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Ban
+                Tổ chức<svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar1"
+                class="invisible group-focus-within:visible z-10 sm:w-44 w-full font-normal bg-white rounded divide-y divide-gray-100 shadow block"
+                data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383px, 66px, 0px);">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#BTC" class="block py-2 px-4 hover:bg-gray-100">Ban Tổ chức</a>
+                  </li>
+                  <li>
+                    <a href="#BCV" class="block py-2 px-4 hover:bg-gray-100">Ban Cố vấn</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100">Ban Giám khảo</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#DoiTac"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Đơn
+                vị đối tác</a>
+            </li>
+            <li>
+              <a href="#FAQ"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- End nav -->
 
-<div class="h-24 sm:h-24 md:h-36 lg:h-24"> 
-</div>
-<!-- Begin main -->
-  <main class="relative h-96"> 
+  <!-- Begin content -->
+
+  <div class="h-24 sm:h-24 md:h-36 lg:h-24">
+  </div>
+  <!-- Begin main -->
+  <main class="relative h-96">
     <!-- <div class="h-1/3"> 
         <div class="h-screen min-h-screen bg-cover bg-center" style="background-image: url(./src/img/bg-header.jpg)"></div>
         <div class="container z-20 mx-auto px-4"></div>
     </div> -->
-      <div class="relative flex flex-col bg-clip-border rounded-xl text-gray-700 mx-6 bg-white md:mx-12">
-          <div class="container z-20 mx-auto px-4">
-              <section id="GioiThieu" class="py-10 lg:pb-10 lg:pt-20">
-                  <div class="mx-auto w-full text-center md:w-3/4 lg:w-1/2">
-                      <h2 class="uppercase block antialiased font-sans text-4xl leading-[1.3] mb-2 font-semibold tracking-normal text-[#1A237E]">
-                          Giới thiệu
-                      </h2>
-                      <p class="block antialiased font-sans mb-2 text-lg font-light text-[#1A237E]/60">
-                        𝐖𝐂𝐨𝐧𝐭𝐞𝐬𝐭 là một cuộc thi lập trình web được tổ chức chính bởi CLB Toán Tin HAMIC với mong muốn đem đến cho những bạn sinh viên đam mê công nghệ thông tin một sân chơi học thuật ý nghĩa. Tại đây, các bạn sẽ được nâng cao khả năng lập trình ứng dụng thực tế, khả năng quản lý dự án và làm việc nhóm.  
-                      </p>
-                  </div>
-              </section>
-              <section id="TheLe" class="py-10 lg:py-10">
-                      <div class="mx-auto w-full text-center md:w-3/4 lg:w-1/2">
-                          <h2 class="uppercase block antialiased font-sans text-4xl leading-[1.3] mb-4 font-semibold tracking-normal text-[#1A237E]">
-                              Thể Lệ
-                          </h2>
-                      </div>
-
-                      <!-- component -->
-                      <div class="items-center justify-center">
-                        <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2">
-                          <div class="flex flex-col-reverse sm:flex-row-reverse md:contents">
-                            <div class="w-full col-start-1 col-end-5 p-4 rounded-xl shadow-xl my-4 ml-auto border border-gray-300 bg-blue-400">
-                              <h3 class="mb-3 font-bold text-white text-xl">Chủ đề cuộc thi</h3>
-                              <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100 ">Với chủ đề “𝐖𝐞𝐛 𝐟𝐨𝐫 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧”, cuộc thi năm nay hướng tới các trang web mang mục đích cao cả: nâng cao chất lượng giáo dục, thắp sáng tương lai tri thức. Dựa trên những đề tài mà Ban Tổ chức và các Nhà tài trợ đưa ra, các thí sinh sẽ lập trình ra trang web phù hợp nhưng cũng không kém phần sáng tạo để có thể truyền tải kiến thức một cách hấp dẫn.</p>
-                            </div>
-                      
-                            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                              <div class="h-full w-6 flex items-center justify-center">
-                                <div class="h-full w-0.5 sm:bg-gray-600 pointer-events-none bg-gray-100"></div>
-                              </div>
-                               <div class="w-6 h-6 absolute top-1/2 -mt-3 border-2 sm:border-gray-500 rounded-full sm:bg-gray-400 shadow-xl bg-gray-100 border-gray-300">
-                                <h1 class="text-center text-black text-xs font-bold mb-0 pr-0.5 pt-0.5 sm:text-white">1</h1>
-                               </div>
-                              </div>
-                            </div>
-                      
-                          <div class="flex flex-col sm:flex-row md:contents">
-                            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                              <div class="h-full w-6 flex items-center justify-center">
-                                <div class="h-full w-0.5 sm:bg-gray-500 pointer-events-none bg-gray-100"></div>
-                              </div>
-                      
-                              <div class="w-6 h-6 absolute top-1/2 -mt-3 border-2 sm:border-gray-500 rounded-full sm:bg-gray-400 shadow-xl bg-gray-100 border-gray-300">
-                              <h1 class="text-center text-black text-xs font-bold mb-0 pr-0.5 pt-0.5 sm:text-white">2</h1>
-                              </div>
-                            </div>
-                      
-                            <div class="w-full col-start-6 col-end-10 my-4 mr-auto p-4 border border-gray-300 bg-red-400 rounded-xl shadow-xl">
-                              <h3 class="mb-3 font-bold text-white text-xl">Hình thức tham gia</h3>
-                              <ul class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100 list-disc" >
-                                <li>Thi đội nhóm từ 3-5 thành viên</li>
-                                <li>Các nhóm tham gia 2 tiền workshop tại Trường ĐH Khoa học Tự nhiên (334 Nguyễn Trãi, Thanh Xuân, Hà Nội)</li>
-                                <li>Tất cả code và web thành phẩm sẽ được đẩy và deploy trên Github của Ban Tổ chức</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-              </section>
+    <div class="relative flex flex-col bg-clip-border rounded-xl text-gray-700 mx-6 bg-white md:mx-12">
+      <div class="container z-20 mx-auto px-4">
+        <section id="GioiThieu" class="py-10 lg:pb-10 lg:pt-20">
+          <div class="mx-auto w-full text-center md:w-3/4 lg:w-1/2">
+            <h2
+              class="uppercase block antialiased font-sans text-4xl leading-[1.3] mb-2 font-semibold tracking-normal text-[#1A237E]">
+              Giới thiệu
+            </h2>
+            <p class="block antialiased font-sans mb-2 text-lg font-light text-[#1A237E]/60">
+              𝐖𝐂𝐨𝐧𝐭𝐞𝐬𝐭 là một cuộc thi lập trình web được tổ chức chính bởi CLB Toán Tin HAMIC với mong muốn đem
+              đến cho những bạn sinh viên đam mê công nghệ thông tin một sân chơi học thuật ý nghĩa. Tại đây, các bạn sẽ
+              được nâng cao khả năng lập trình ứng dụng thực tế, khả năng quản lý dự án và làm việc nhóm.
+            </p>
           </div>
-      </div> 
+        </section>
+        <section id="TheLe" class="py-10 lg:py-10">
+          <div class="mx-auto w-full text-center md:w-3/4 lg:w-1/2">
+            <h2
+              class="uppercase block antialiased font-sans text-4xl leading-[1.3] mb-4 font-semibold tracking-normal text-[#1A237E]">
+              Thể Lệ
+            </h2>
+          </div>
 
-      <!--Begin 4-->
-      <div id="TieuChi" class = "criteria">
-        <h2 class="header">TIÊU CHÍ ĐÁNH GIÁ</h2>
-        <div class="row2 content-criteria">
-          <ul class="list-criteria">
-              <li class="each-criteria"><i class="ti-check"></i> <span><strong>Đội nhóm: 5% ~</strong> Cách làm việc nhóm, phân chia công việc.</span></li>
-              <li class="each-criteria"><i class="ti-check"></i> <span></span><strong>Đề tài + hướng giải quyết: 10% ~</strong> Độ thực tế, hấp dẫn hay sự mới mẻ, sáng tạo của vấn đề nhóm đưa ra cũng như cách giải quyết chúng.</li>
-              <li class="each-criteria"><i class="ti-check"></i> <strong>Hoàn thành: 60% ~</strong> Tính theo các ý nhóm đã đề ra trước đó</li>
-              <li class="each-criteria"><i class="ti-check"></i> <strong>Hình thức web: 25% ~</strong> Trải nghiệm UX/UI</li> <strong></strong>
-          </ul>
-        </div>
+          <!-- component -->
+          <div class="items-center justify-center">
+            <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2">
+              <div class="flex flex-col-reverse sm:flex-row-reverse md:contents">
+                <div
+                  class="w-full col-start-1 col-end-5 p-4 rounded-xl shadow-xl my-4 ml-auto border border-gray-300 bg-blue-400">
+                  <h3 class="mb-3 font-bold text-white text-xl">Chủ đề cuộc thi</h3>
+                  <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100 ">Với chủ đề
+                    “𝐖𝐞𝐛 𝐟𝐨𝐫 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧”, cuộc thi năm nay hướng tới các trang web mang mục đích cao cả:
+                    nâng cao chất lượng giáo dục, thắp sáng tương lai tri thức. Dựa trên những đề tài mà Ban Tổ chức và
+                    các Nhà tài trợ đưa ra, các thí sinh sẽ lập trình ra trang web phù hợp nhưng cũng không kém phần
+                    sáng tạo để có thể truyền tải kiến thức một cách hấp dẫn.</p>
+                </div>
 
-        <div class="row2 animation">
-          <lottie-player src="./src/animation/fly.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-        </div>
-        <div class="clear"></div>
+                <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                  <div class="h-full w-6 flex items-center justify-center">
+                    <div class="h-full w-0.5 sm:bg-gray-600 pointer-events-none bg-gray-100"></div>
+                  </div>
+                  <div
+                    class="w-6 h-6 absolute top-1/2 -mt-3 border-2 sm:border-gray-500 rounded-full sm:bg-gray-400 shadow-xl bg-gray-100 border-gray-300">
+                    <h1 class="text-center text-black text-xs font-bold mb-0 pr-0.5 pt-0.5 sm:text-white">1</h1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row md:contents">
+                <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                  <div class="h-full w-6 flex items-center justify-center">
+                    <div class="h-full w-0.5 sm:bg-gray-500 pointer-events-none bg-gray-100"></div>
+                  </div>
+
+                  <div
+                    class="w-6 h-6 absolute top-1/2 -mt-3 border-2 sm:border-gray-500 rounded-full sm:bg-gray-400 shadow-xl bg-gray-100 border-gray-300">
+                    <h1 class="text-center text-black text-xs font-bold mb-0 pr-0.5 pt-0.5 sm:text-white">2</h1>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full col-start-6 col-end-10 my-4 mr-auto p-4 border border-gray-300 bg-red-400 rounded-xl shadow-xl">
+                  <h3 class="mb-3 font-bold text-white text-xl">Hình thức tham gia</h3>
+                  <ul class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100 list-disc">
+                    <li>Thi đội nhóm từ 3-5 thành viên</li>
+                    <li>Các nhóm tham gia 2 tiền workshop tại Trường ĐH Khoa học Tự nhiên (334 Nguyễn Trãi, Thanh Xuân,
+                      Hà Nội)</li>
+                    <li>Tất cả code và web thành phẩm sẽ được đẩy và deploy trên Github của Ban Tổ chức</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+    <!--Begin 4-->
+    <div id="TieuChi" class="criteria">
+      <h2 class="header">TIÊU CHÍ ĐÁNH GIÁ</h2>
+      <div class="row2 content-criteria">
+        <ul class="list-criteria">
+          <li class="each-criteria"><i class="ti-check"></i> <span><strong>Đội nhóm: 5% ~</strong> Cách làm việc nhóm,
+              phân chia công việc.</span></li>
+          <li class="each-criteria"><i class="ti-check"></i> <span></span><strong>Đề tài + hướng giải quyết: 10%
+              ~</strong> Độ thực tế, hấp dẫn hay sự mới mẻ, sáng tạo của vấn đề nhóm đưa ra cũng như cách giải quyết
+            chúng.</li>
+          <li class="each-criteria"><i class="ti-check"></i> <strong>Hoàn thành: 60% ~</strong> Tính theo các ý nhóm đã
+            đề ra trước đó</li>
+          <li class="each-criteria"><i class="ti-check"></i> <strong>Hình thức web: 25% ~</strong> Trải nghiệm UX/UI
+          </li> <strong></strong>
+        </ul>
+      </div>
+
+      <div class="row2 animation">
+        <lottie-player src="./src/animation/fly.json" background="transparent" speed="1"
+          style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+      </div>
+      <div class="clear"></div>
     </div>
     <!-- End 4-->
 
     <!-- Begin giaithuong -->
-    <div id = "GiaiThuong" class="giaithuong">
+    <div id="GiaiThuong" class="giaithuong">
       <div>
       </div>
-    <h2 class="header">GIẢI THƯỞNG</h2>
-        <div class="hang1">
-            <div class="phanthuong">
-            <div class="inline-block">
-              <lottie-player src="https://assets5.lottiefiles.com/temp/lf20_ZtX97R.json"  background="transparent"  speed="1"  style="width: 350px; height: 250px;"  loop  autoplay></lottie-player>
-            </div>
-                <p class="tong_gia_tri !-mt-8">Tổng trị giá 53.500.000 đồng</p>
-                <p class="giai_thuong_gom">
-                    <ul>
-                        <li>Huy chương Vàng, giấy chứng nhận và 4.000.000 VNĐ tiền mặt</li>
-                        <li>5 gói ứng viên VIP 1 năm trên nền tảng JobOKO trị giá 7.500.000 VNĐ</li>
-                        <li>5 suất học bổng giảm 70% học phí khóa học tại ITPlus trị giá 42.000.000 VNĐ</li>
-                    </ul>
-                </p>
-            </div>
+      <h2 class="header">GIẢI THƯỞNG</h2>
+      <div class="hang1">
+        <div class="phanthuong">
+          <div class="inline-block">
+            <lottie-player src="https://assets5.lottiefiles.com/temp/lf20_ZtX97R.json" background="transparent"
+              speed="1" style="width: 350px; height: 250px;" loop autoplay></lottie-player>
+          </div>
+          <p class="tong_gia_tri !-mt-8">Tổng trị giá 53.500.000 đồng</p>
+          <p class="giai_thuong_gom">
+          <ul>
+            <li>Huy chương Vàng, giấy chứng nhận và 4.000.000 VNĐ tiền mặt</li>
+            <li>5 gói ứng viên VIP 1 năm trên nền tảng JobOKO trị giá 7.500.000 VNĐ</li>
+            <li>5 suất học bổng giảm 70% học phí khóa học tại ITPlus trị giá 42.000.000 VNĐ</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="hang2 row2">
+        <div class="phanthuong">
+          <div class="inline-block">
+            <lottie-player src="./src/animation/silver.json" background="transparent" speed="1"
+              style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+          </div>
+          <p class="tong_gia_tri">Tổng trị giá 49.500.000 đồng</p>
+          <p class="giai_thuong_gom">
+          <ul>
+            <li>Huy chương Bạc, giấy chứng nhận và 3.000.000 VNĐ tiền mặt</li>
+            <li>5 gói ứng viên VIP 1 năm trên nền tảng JobOKO trị giá 7.500.000 VNĐ</li>
+            <li>5 suất học bổng giảm 65% học phí khóa học tại ITPlus trị giá 39.000.000 VNĐ</li>
+          </ul>
+
+          </p>
         </div>
 
-        <div class="hang2 row2">
-            <div class="phanthuong">
-              <div class="inline-block">
-                <lottie-player src="./src/animation/silver.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
-                  </div>
-                <p class="tong_gia_tri">Tổng trị giá 49.500.000 đồng</p>
-                <p class="giai_thuong_gom">
-                    <ul>
-                        <li>Huy chương Bạc, giấy chứng nhận và 3.000.000 VNĐ tiền mặt</li>
-                        <li>5 gói ứng viên VIP 1 năm trên nền tảng JobOKO trị giá 7.500.000 VNĐ</li>
-                        <li>5 suất học bổng giảm 65% học phí khóa học tại ITPlus trị giá 39.000.000 VNĐ</li>
-                    </ul>
-
-                </p>
-            </div>
-
-            <div class="phanthuong">
-                <div class="inline-block">
-              <lottie-player src="./src/animation/brown.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
-                </div>
-                <p class="tong_gia_tri">Tổng trị giá 40.000.000 đồng</p>
-                <p class="giai_thuong_gom">
-                    <ul>
-                        <li>Huy chương Đồng, giấy chứng nhận và 2.500.000 VNĐ tiền mặt</li>
-                        <li>5 gói ứng viên VIP 1 năm trên nền tảng JobOKO trị giá 7.500.000 VNĐ</li>
-                        <li>5 suất học bổng giảm 60% học phí khóa học tại ITPlus trị giá 36.000.000 VNĐ</li>
-                    </ul>
-            </div>
+        <div class="phanthuong">
+          <div class="inline-block">
+            <lottie-player src="./src/animation/brown.json" background="transparent" speed="1"
+              style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+          </div>
+          <p class="tong_gia_tri">Tổng trị giá 40.000.000 đồng</p>
+          <p class="giai_thuong_gom">
+          <ul>
+            <li>Huy chương Đồng, giấy chứng nhận và 2.500.000 VNĐ tiền mặt</li>
+            <li>5 gói ứng viên VIP 1 năm trên nền tảng JobOKO trị giá 7.500.000 VNĐ</li>
+            <li>5 suất học bổng giảm 60% học phí khóa học tại ITPlus trị giá 36.000.000 VNĐ</li>
+          </ul>
+        </div>
         <div class="clear"></div>
+      </div>
+
+      <div class="hang3 row2">
+        <div class="phanthuong">
+          <div class="inline-block">
+            <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_kpak4iic.json"
+              background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p class="ten_giai_thuong bg-red-400 text-white">GIẢI KHUYẾN KHÍCH</p>
+          </div>
+          <p class="tong_gia_tri">Tổng trị giá 3.500.000 đồng</p>
+          <p class="giai_thuong_gom">
+          <ul>
+            <li>Giấy chứng nhận + 2.000.000 VNĐ tiền mặt </li>
+          </ul>
+          </p>
         </div>
 
-        <div class="hang3 row2">
-            <div class="phanthuong">
-              <div class="inline-block">
-                <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_kpak4iic.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
-                <p class="ten_giai_thuong bg-red-400 text-white">GIẢI KHUYẾN KHÍCH</p>       
-              </div>
-                <p class="tong_gia_tri">Tổng trị giá 3.500.000 đồng</p>
-                <p class="giai_thuong_gom">
-                    <ul>
-                        <li>Giấy chứng nhận + 2.000.000 VNĐ tiền mặt </li>
-                    </ul>
-                </p>
-            </div>
-
-            <div class="phanthuong">
-              <div class="inline-block">
-                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_o7sutfbq.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
-                <p class="ten_giai_thuong bg-blue-400 text-white">GIẢI BÌNH CHỌN</p>     
-              </div>
-                <p class="tong_gia_tri">Tổng trị giá 2.500.000 đồng</p>
-                <p class="giai_thuong_gom">
-                    <ul>
-                        <li>Giấy chứng nhận + 1.000.000 VNĐ tiền mặt</li>
-                        <li></li>
-                    </ul>
-                </p>
-            </div>
+        <div class="phanthuong">
+          <div class="inline-block">
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_o7sutfbq.json" background="transparent"
+              speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p class="ten_giai_thuong bg-blue-400 text-white">GIẢI BÌNH CHỌN</p>
+          </div>
+          <p class="tong_gia_tri">Tổng trị giá 2.500.000 đồng</p>
+          <p class="giai_thuong_gom">
+          <ul>
+            <li>Giấy chứng nhận + 1.000.000 VNĐ tiền mặt</li>
+            <li></li>
+          </ul>
+          </p>
+        </div>
         <div class="clear"></div>
-        </div>
+      </div>
     </div>
-        
+
     <!-- End giaithuong -->
 
     <!--begin 7-->
-      <div class="advisory-and-jury">
-        <div id="BTC" class="bantochuc">
+    <div class="advisory-and-jury">
+      <div id="BTC" class="bantochuc">
         <h2 class="header text-sky-500">BAN TỔ CHỨC</h2>
-            <div class="list-member">
-                <div class="about-member-bantochuc">
-                    <img src="/src/img/logo.png" alt="CLB Toán Tin HAMIC" class="member-img-bantochuc">
-                    <p class="member-name-bantochuc"> CLB Toán Tin HAMIC</p>
-                    <p class="member-position-bantochuc">CLB học thuật về toán học và công nghệ thông tin duy nhất tại HUS</p>
-                </div>
-                <div class="about-member-bantochuc fix-1024">
-                    <img src="/img/nha tai tro/MIM.png "alt="CLB MIM Media" class="member-img-bantochuc">
-                    <p class="member-name-bantochuc">CLB MIM Media</p>
-                    <p class="member-position-bantochuc">CLB truyền thông của khoa Toán - Cơ - Tin học tại HUS</p>
-                </div>
-                <div class="about-member about-member-btc">
-                    <img src="/img/nha tai tro/Btc/Ngo Phuong Trang - Truong BTC.jpg" alt="Trưởng ban tổ chức" class="member-img">
-                    <p class="member-name">Trưởng Ban Tổ chức</p>
-                    <p class="member-position">Ngô Phương Trang - K65A6 MT&KHTT</p>
-                </div>
-                <div class="about-member about-member-btc">
-                    <img src="/img/nha tai tro/Btc/PCN_Vinh.jpg" alt="Phó Ban Tổ chứ" class="member-img">
-                    <p class="member-name">Phó Ban Tổ chức</p>
-                    <p class="member-position">Khổng Văn Vinh - K65A2 Toán Tin</p>
-                </div>
-                <div class="about-member about-member-btc">
-                    <img src="/img/nha tai tro/Btc/Nguyen Dinh Viet Anh - K65A5 KHDL.JPG" alt="Chủ nhiệm MIM Media" class="member-img">
-                    <p class="member-name">Chủ nhiệm MIM Media </p>
-                    <p class="member-position">Nguyễn Đình Việt Anh - K65A5 KHDL </p>
-                </div>
-                <div class="clear"></div>
-            </div>
+        <div class="list-member">
+          <div class="about-member-bantochuc">
+            <img src="/src/img/logo.png" alt="CLB Toán Tin HAMIC" class="member-img-bantochuc">
+            <p class="member-name-bantochuc"> CLB Toán Tin HAMIC</p>
+            <p class="member-position-bantochuc">CLB học thuật về toán học và công nghệ thông tin duy nhất tại HUS</p>
+          </div>
+          <div class="about-member-bantochuc fix-1024">
+            <img src="/img/nha tai tro/MIM.png " alt="CLB MIM Media" class="member-img-bantochuc">
+            <p class="member-name-bantochuc">CLB MIM Media</p>
+            <p class="member-position-bantochuc">CLB truyền thông của khoa Toán - Cơ - Tin học tại HUS</p>
+          </div>
+          <div class="about-member about-member-btc">
+            <img src="/img/nha tai tro/Btc/Ngo Phuong Trang - Truong BTC.jpg" alt="Trưởng ban tổ chức"
+              class="member-img">
+            <p class="member-name">Trưởng Ban Tổ chức</p>
+            <p class="member-position">Ngô Phương Trang - K65A6 MT&KHTT</p>
+          </div>
+          <div class="about-member about-member-btc">
+            <img src="/img/nha tai tro/Btc/PCN_Vinh.jpg" alt="Phó Ban Tổ chứ" class="member-img">
+            <p class="member-name">Phó Ban Tổ chức</p>
+            <p class="member-position">Khổng Văn Vinh - K65A2 Toán Tin</p>
+          </div>
+          <div class="about-member about-member-btc">
+            <img src="/img/nha tai tro/Btc/Nguyen Dinh Viet Anh - K65A5 KHDL.JPG" alt="Chủ nhiệm MIM Media"
+              class="member-img">
+            <p class="member-name">Chủ nhiệm MIM Media </p>
+            <p class="member-position">Nguyễn Đình Việt Anh - K65A5 KHDL </p>
+          </div>
+          <div class="clear"></div>
         </div>
+      </div>
 
-        <!--
+      <!--
         <div class="bangiamkhao">
             <h2 class="header">BAN GIÁM KHẢO</h2>
             <p class = "about-paragraph">HAMIC trân trọng giới thiệu tới các bạn dưới đây là những vị giám khảo của WContest 2022 - người sẽ đưa ra quyết định cuối cùng về đội thi chiến thắng trong đêm chung kết diễn ra vào ngày 27/10. </p>
@@ -326,318 +395,267 @@
         </div>
       -->
 
-        <div id="BCV" class="bancovan">
-            <h2 class = "header">BAN CỐ VẤN CHUYÊN MÔN</h2>
-            <!-- <p class = "about-paragraph">Đồng hành cùng các bạn thí sinh trong suốt quá trình thi không thể không kể đến những anh chị trong ban cố vấn chuyên môn vô cùng nhiệt huyết, cụ thể là:</p> -->
-            <div class="list-member">
-                <div class="about-member about-member-normal hang1">
-                    <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong ty JVB/JVB. Nguyễn Văn Trình.png" alt="member1" class="member-img">
-                    <p class="member-name">Nguyễn Văn Trình</p>
-                    <p class="member-position">Developer - Manager’s JVB Việt Nam</p>
-                </div>
+      <div id="BCV" class="bancovan">
+        <h2 class="header">BAN CỐ VẤN CHUYÊN MÔN</h2>
+        <!-- <p class = "about-paragraph">Đồng hành cùng các bạn thí sinh trong suốt quá trình thi không thể không kể đến những anh chị trong ban cố vấn chuyên môn vô cùng nhiệt huyết, cụ thể là:</p> -->
+        <div class="list-member">
+          <div class="about-member about-member-normal hang1">
+            <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong ty JVB/JVB. Nguyễn Văn Trình.png" alt="member1"
+              class="member-img">
+            <p class="member-name">Nguyễn Văn Trình</p>
+            <p class="member-position">Developer - Manager’s JVB Việt Nam</p>
+          </div>
 
-                <div class="about-member about-member-normal hang1">
-                    <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong ty JVB/JVB. Trần Thị Huyền Trang.png" alt="member1" class="member-img">
-                    <p class="member-name">Trần Thị Huyền Trang</p>
-                    <p class="member-position">Developer - Manager’s JVB Việt Nam</p>
-                </div> 
+          <div class="about-member about-member-normal hang1">
+            <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong ty JVB/JVB. Trần Thị Huyền Trang.png" alt="member1"
+              class="member-img">
+            <p class="member-name">Trần Thị Huyền Trang</p>
+            <p class="member-position">Developer - Manager’s JVB Việt Nam</p>
+          </div>
 
-                <div class="about-member about-member-normal hang1">
-                    <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong Ty Rabiloo/Bùi Văn Vương.jpg" alt="member1" class="member-img">
-                    <p class="member-name">Bùi Văn Vương</p>
-                    <p class="member-position"> Project Manager & Full Stack Team Leader</p>
-                </div>
+          <div class="about-member about-member-normal hang1">
+            <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong Ty Rabiloo/Bùi Văn Vương.jpg" alt="member1"
+              class="member-img">
+            <p class="member-name">Bùi Văn Vương</p>
+            <p class="member-position"> Project Manager & Full Stack Team Leader</p>
+          </div>
 
-                <div class="hang2 about-member about-member-normal ">
-                    <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong Ty Rabiloo/Trần Văn Trưởng.png" alt="member1" class="member-img">
-                    <p class="member-name">Trần Văn Trưởng</p>
-                    <p class="member-position">Project Manager and PHP Team Leader</p>
-                </div>
+          <div class="hang2 about-member about-member-normal ">
+            <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong Ty Rabiloo/Trần Văn Trưởng.png" alt="member1"
+              class="member-img">
+            <p class="member-name">Trần Văn Trưởng</p>
+            <p class="member-position">Project Manager and PHP Team Leader</p>
+          </div>
 
-                <div class="about-member about-member-normal hang2">
-                    <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong ty VHC/Nguyễn Quang Trung.jpg" alt="member1" class="member-img">
-                    <p class="member-name">Nguyễn Quang Trung</p>
-                    <p class="member-position">Back End Developer</p>
-                </div>
+          <div class="about-member about-member-normal hang2">
+            <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong ty VHC/Nguyễn Quang Trung.jpg" alt="member1"
+              class="member-img">
+            <p class="member-name">Nguyễn Quang Trung</p>
+            <p class="member-position">Back End Developer</p>
+          </div>
 
-                <div class="about-member about-member-normal hang2">
-                  <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong ty VAIS/Nguyễn Quang Anh (2).jpg" alt="member1" class="member-img">
-                  <p class="member-name">Nguyễn Quang Anh</p>
-                  <p class="member-position">Project Manager</p>
-              </div>
+          <div class="about-member about-member-normal hang2">
+            <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Cong ty VAIS/Nguyễn Quang Anh (2).jpg" alt="member1"
+              class="member-img">
+            <p class="member-name">Nguyễn Quang Anh</p>
+            <p class="member-position">Project Manager</p>
+          </div>
 
-              <div class="about-member about-member-normal hang2 fix-768">
-                <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Hamic/Phạm Hồng Phúc.jpg" alt="member1" class="member-img">
-                <p class="member-name">Phạm Hồng Phúc</p>
-                <p class="member-position">Project Manager</p>
-              </div>
-                <div class="clear"></div>
-            </div>
-        </div>    
+          <div class="about-member about-member-normal hang2 fix-768">
+            <img src="/img/nha tai tro/Ban_co_van_chuyen_mon/Hamic/Phạm Hồng Phúc.jpg" alt="member1" class="member-img">
+            <p class="member-name">Phạm Hồng Phúc</p>
+            <p class="member-position">Project Manager</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
     </div>
     <!--End 7-->
 
     <!-- Begin Quyền lợi -->
     <div class="quyenloi">
-        <h2 class="header uppercase">Quyền lợi dành cho khán giả</h2>
-        <div><div class="phan_qua row2">
+      <h2 class="header uppercase">Quyền lợi dành cho khán giả</h2>
+      <div>
+        <div class="phan_qua row2">
           <h3 class="header-quyenloi uppercase">Phần quà giá trị</h3>
-          <p class="noi_dung_quyen_loi">Tham gia các minigame vui chơi có thưởng với những phần quà đến từ các doanh nghiệp như túi xách, móc khóa, sổ tay...</p>
-      </div>
+          <p class="noi_dung_quyen_loi">Tham gia các minigame vui chơi có thưởng với những phần quà đến từ các doanh
+            nghiệp như túi xách, móc khóa, sổ tay...</p>
+        </div>
 
-      <div class="kien_thuc row2">
+        <div class="kien_thuc row2">
           <h3 class="header-quyenloi uppercase">Nâng tầm kiến thức</h3>
-          <p class="noi_dung_quyen_loi">Những phần thi cân não của TOP 5 và những nhận xét chuyên môn sắc bén, giàu kinh nghiệm của Hội đồng ban giám khảo chắc chắn sẽ là cơ hội học hỏi mà bạn không thể bỏ qua giúp bạn hiểu hơn về cách làm một dự án thực tế và từ đó hoàn thiện bản thân từng ngày.
+          <p class="noi_dung_quyen_loi">Những phần thi cân não của TOP 5 và những nhận xét chuyên môn sắc bén, giàu kinh
+            nghiệm của Hội đồng ban giám khảo chắc chắn sẽ là cơ hội học hỏi mà bạn không thể bỏ qua giúp bạn hiểu hơn
+            về cách làm một dự án thực tế và từ đó hoàn thiện bản thân từng ngày.
           </p>
+        </div>
+        <div class="clear"></div>
       </div>
-      <div class="clear"></div></div>
     </div>
 
     <!-- End Quyền lợi -->
-    
+
     <!--Begin FAQ  -->
     <div id="FAQ" class="container z-20 mx-auto px-4 pt-20">
       <section class="pb-10">
-          <div class="mx-auto w-full text-center md:w-3/4 lg:w-1/2">
-            <h2 class="uppercase block antialiased font-sans text-4xl leading-[1.3] mb-4 font-semibold tracking-normal text-[#1A237E]">
-              FAQ
-            </h2>
-          </div>
-          <div class="bg-white border border-gray-200 divide-y divide-gray-200 rounded-xl">
-            <details class="p-6 group">
-              <summary class="flex items-center justify-between cursor-pointer">
-                <h5 class="text-lg font-semibold font-sans text-gray-700"> Đối tượng tham gia cuộc thi là ai ? </h5>
-                            
-                <span class="relative flex-shrink-0 ml-1.5 w-5 h-5 group-hover:animate-bounce">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 stroke-cyan-500 group-hover:stroke-cyan-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                              
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 stroke-sky-500 group-hover:stroke-sky-700 "
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </span>
-              </summary>
-                          
-              <p class="mt-4 leading-relaxed font-sans font-medium text-gray-600">
-                Sinh viên có đam mê với lập trình Web trên địa bàn Hà Nội.
-              </p>
-            </details>
+        <div class="mx-auto w-full text-center md:w-3/4 lg:w-1/2">
+          <h2
+            class="uppercase block antialiased font-sans text-4xl leading-[1.3] mb-4 font-semibold tracking-normal text-[#1A237E]">
+            FAQ
+          </h2>
+        </div>
+        <div class="bg-white border border-gray-200 divide-y divide-gray-200 rounded-xl">
+          <details class="p-6 group">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <h5 class="text-lg font-semibold font-sans text-gray-700"> Đối tượng tham gia cuộc thi là ai ? </h5>
 
-            <details class="p-6 group">
-              <summary class="flex items-center justify-between cursor-pointer">
-                <h5 class="text-lg font-semibold font-sans text-gray-700">
-                  Địa điểm tổ chức offline cuộc thi ở đâu ?</h5>
-                            
-                <span class="relative flex-shrink-0 ml-1.5 w-5 h-5 group-hover:animate-bounce">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 stroke-cyan-500 group-hover:stroke-cyan-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                              
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 stroke-sky-500 group-hover:stroke-sky-700 "
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </span>
-              </summary>
-                          
-              <p class="mt-4 leading-relaxed font-sans font-medium text-gray-600">
-                Trường ĐH Khoa học Tự nhiên, 334 Nguyễn Trãi, Thanh Xuân, Hà Nội.
-              </p>
-            </details>
+              <span class="relative flex-shrink-0 ml-1.5 w-5 h-5 group-hover:animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 stroke-cyan-500 group-hover:stroke-cyan-700"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
 
-            <details class="p-6 group">
-              <summary class="flex items-center justify-between cursor-pointer">
-                <h5 class="text-lg font-semibold font-sans text-gray-700">
-                  Thể lệ và cách thức chấm thi như thế nào ?</h5>
-                            
-                <span class="relative flex-shrink-0 ml-1.5 w-5 h-5 group-hover:animate-bounce">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 stroke-cyan-500 group-hover:stroke-cyan-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                              
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 stroke-sky-500 group-hover:stroke-sky-700 "
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </span>
-              </summary>
-                          
-              <p class="mt-4 leading-relaxed font-sans font-medium text-gray-600">
-                Bạn vui lòng đọc ở mục <a href="#TheLe" class="text-blue-600 hover:text-blue-500">Thể lệ</a>.
-              </p>
-            </details>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 stroke-sky-500 group-hover:stroke-sky-700 "
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+            </summary>
 
-            <details class="p-6 group">
-              <summary class="flex items-center justify-between cursor-pointer">
-                <h5 class="text-lg font-semibold font-sans text-gray-700">
-                  Quyền lợi khi tham gia cuộc thi là gì ?</h5>
-                            
-                <span class="relative flex-shrink-0 ml-1.5 w-5 h-5 group-hover:animate-bounce">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 stroke-sky-500 group-hover:stroke-sky-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                              
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 stroke-sky-500 group-hover:stroke-sky-700 "
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </span>
-              </summary>
-                          
-              <p class="mt-4 leading-relaxed font-sans font-medium text-gray-600">
-                Ngoài những phần quà hấp dẫn đã đề ra ở trên thì quyền lợi tốt nhất dành cho các ứng 
-                viên là khẳng định bản thân và có nguồn kết nối với các doanh nghiệp và nhà tài trợ. 
-                Nếu sản phẩm của bạn có tiềm năng, nhà tài trợ sẽ chi thêm chi phí để sản phẩm của bạn 
-                được hoàn thiện nhất, rất có lợi cho conn đường phát triển sau này.
-              </p>
-            </details>
-          </div>  
+            <p class="mt-4 leading-relaxed font-sans font-medium text-gray-600">
+              Sinh viên có đam mê với lập trình Web trên địa bàn Hà Nội.
+            </p>
+          </details>
+
+          <details class="p-6 group">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <h5 class="text-lg font-semibold font-sans text-gray-700">
+                Địa điểm tổ chức offline cuộc thi ở đâu ?</h5>
+
+              <span class="relative flex-shrink-0 ml-1.5 w-5 h-5 group-hover:animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 stroke-cyan-500 group-hover:stroke-cyan-700"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 stroke-sky-500 group-hover:stroke-sky-700 "
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+            </summary>
+
+            <p class="mt-4 leading-relaxed font-sans font-medium text-gray-600">
+              Trường ĐH Khoa học Tự nhiên, 334 Nguyễn Trãi, Thanh Xuân, Hà Nội.
+            </p>
+          </details>
+
+          <details class="p-6 group">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <h5 class="text-lg font-semibold font-sans text-gray-700">
+                Thể lệ và cách thức chấm thi như thế nào ?</h5>
+
+              <span class="relative flex-shrink-0 ml-1.5 w-5 h-5 group-hover:animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 stroke-cyan-500 group-hover:stroke-cyan-700"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 stroke-sky-500 group-hover:stroke-sky-700 "
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+            </summary>
+
+            <p class="mt-4 leading-relaxed font-sans font-medium text-gray-600">
+              Bạn vui lòng đọc ở mục <a href="#TheLe" class="text-blue-600 hover:text-blue-500">Thể lệ</a>.
+            </p>
+          </details>
+
+          <details class="p-6 group">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <h5 class="text-lg font-semibold font-sans text-gray-700">
+                Quyền lợi khi tham gia cuộc thi là gì ?</h5>
+
+              <span class="relative flex-shrink-0 ml-1.5 w-5 h-5 group-hover:animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 stroke-sky-500 group-hover:stroke-sky-700"
+                  fill="none" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 stroke-sky-500 group-hover:stroke-sky-700 "
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+            </summary>
+
+            <p class="mt-4 leading-relaxed font-sans font-medium text-gray-600">
+              Ngoài những phần quà hấp dẫn đã đề ra ở trên thì quyền lợi tốt nhất dành cho các ứng
+              viên là khẳng định bản thân và có nguồn kết nối với các doanh nghiệp và nhà tài trợ.
+              Nếu sản phẩm của bạn có tiềm năng, nhà tài trợ sẽ chi thêm chi phí để sản phẩm của bạn
+              được hoàn thiện nhất, rất có lợi cho conn đường phát triển sau này.
+            </p>
+          </details>
+        </div>
       </section>
     </div>
     <!--Begin 9-->
     <div id="DoiTac" class="donors">
-        <div class="donvitochuc">
-            <p class="header-name-donors">ĐƠN VỊ TỔ CHỨC</p>
-            <img src="/img/nha tai tro/HAMIC.png" alt="" class="logo-truong">
-            <img src="/img/nha tai tro/MIM.png" alt="" class="logo-truong">
+      <div class="donvitochuc">
+        <p class="header-name-donors">ĐƠN VỊ TỔ CHỨC</p>
+        <img src="/img/nha tai tro/HAMIC.png" alt="" class="logo-truong">
+        <img src="/img/nha tai tro/MIM.png" alt="" class="logo-truong">
+      </div>
+
+      <div class="donors-hang2">
+        <div class="baotrochuyenmon row3">
+          <p class="header-fix-donors1024 header-name-donors">BẢO TRỢ CHUYÊN MÔN</p>
+          <img src="/img/nha tai tro/bao_tro_chuyen_mon/Khoa Toan-Co-Tin_hoc.png" alt=""
+            class="logo-baotrochuyenmon img-donors">
+          <img src="/img/nha tai tro/bao_tro_chuyen_mon/VAIS.png" alt="" class="logo-baotrochuyenmon img-donors">
         </div>
 
-        <div class="donors-hang2">
-            <div class="baotrochuyenmon row3">
-                <p class="header-fix-donors1024 header-name-donors">BẢO TRỢ CHUYÊN MÔN</p>
-                <img src="/img/nha tai tro/bao_tro_chuyen_mon/Khoa Toan-Co-Tin_hoc.png" alt="" class="logo-baotrochuyenmon img-donors">
-                <img src="/img/nha tai tro/bao_tro_chuyen_mon/VAIS.png" alt="" class="logo-baotrochuyenmon img-donors">
-            </div>
-
-            <div class="nhataitrovang row3">
-                <p class="header-name-donors fix-100">NHÀ TÀI TRỢ VÀNG</p>
-                <img src="/img/nha tai tro/ntc-vang/maxflow_logo.png" alt="" class="logo-taitrovang img-donors">
-            </div>
-
-            <div class="nhataitrobac row3">
-                <p class="header-name-donors">NHÀ TÀI TRỢ BẠC</p>
-                <img src="/img/nha tai tro/ntc-bac/logo joboko.png" alt="" class="logo-taitrobac img-donors">
-                <img src="/img/nha tai tro/ntc-bac/logo JVB.jpg" alt="" class="logo-taitrobac img-donors">
-                <img src="/img/nha tai tro/ntc-bac/Logo-ITPlus.png" alt="" class="logo-taitrobac img-donors">
-                <img src="/img/nha tai tro/ntc-bac/vhc.png" alt="" class="logo-taitrobac img-donors">
-                <img src="/img/nha tai tro/ntc-bac/Logo Rabiloo new.png" alt="" class="logo-taitrobac img-donors">
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-    
-    <!--End 9-->
-    
-    <!-- Begin 11-->
-    <div class="footer">
-        <div class="about-us">
-            <h2 class="header-fix-footer1024 header-footer">Về chúng tôi</h2>
-            <div class="box-icon">
-                <i class="fa-solid fa-circle-right icon-footer"></i><a href="https://www.facebook.com/hamictoantin">CLB Toán Tin HAMIC</a><br>
-                <i class="fa-solid fa-location-dot icon-footer"></i>334 Đ. Nguyễn Trãi, Thanh Xuân Trung, Thanh Xuân, Hà Nội   
-            </div>
+        <div class="nhataitrovang row3">
+          <p class="header-name-donors fix-100">NHÀ TÀI TRỢ VÀNG</p>
+          <img src="/img/nha tai tro/ntc-vang/maxflow_logo.png" alt="" class="logo-taitrovang img-donors">
         </div>
 
-        <div class="about-contest">
-            <h2 class="header-footer">Cuộc thi WContest 2022</h2>
-            <div class="box-icon">
-                <i class="icon-footer fa-solid fa-lightbulb"></i>Cuộc thi lập trình web <br>
-                <i class="icon-footer fa-brands fa-facebook"></i><a href="https://www.facebook.com/113856365643300/posts/1758068714555382/?substory_index=0">Giới thiệu WContest</a><br>
-                <i class="icon-footer fa fa-phone"></i>098 729 26 24<br>
-                <i class="icon-footer fa-solid fa-envelope"></i>hamic@hus.edu.vn
-            </div>
+        <div class="nhataitrobac row3">
+          <p class="header-name-donors">NHÀ TÀI TRỢ BẠC</p>
+          <img src="/img/nha tai tro/ntc-bac/logo joboko.png" alt="" class="logo-taitrobac img-donors">
+          <img src="/img/nha tai tro/ntc-bac/logo JVB.jpg" alt="" class="logo-taitrobac img-donors">
+          <img src="/img/nha tai tro/ntc-bac/Logo-ITPlus.png" alt="" class="logo-taitrobac img-donors">
+          <img src="/img/nha tai tro/ntc-bac/vhc.png" alt="" class="logo-taitrobac img-donors">
+          <img src="/img/nha tai tro/ntc-bac/Logo Rabiloo new.png" alt="" class="logo-taitrobac img-donors">
         </div>
         <div class="clear"></div>
+      </div>
     </div>
-</div>
-<!--End 11-->
 
-<!-- 
+    <!--End 9-->
+
+    <!-- Begin 11-->
+    <div class="footer">
+      <div class="about-us">
+        <h2 class="header-fix-footer1024 header-footer">Về chúng tôi</h2>
+        <div class="box-icon">
+          <i class="fa-solid fa-circle-right icon-footer"></i><a href="https://www.facebook.com/hamictoantin">CLB Toán
+            Tin HAMIC</a><br>
+          <i class="fa-solid fa-location-dot icon-footer"></i>334 Đ. Nguyễn Trãi, Thanh Xuân Trung, Thanh Xuân, Hà Nội
+        </div>
+      </div>
+
+      <div class="about-contest">
+        <h2 class="header-footer">Cuộc thi WContest 2022</h2>
+        <div class="box-icon">
+          <i class="icon-footer fa-solid fa-lightbulb"></i>Cuộc thi lập trình web <br>
+          <i class="icon-footer fa-brands fa-facebook"></i><a
+            href="https://www.facebook.com/113856365643300/posts/1758068714555382/?substory_index=0">Giới thiệu
+            WContest</a><br>
+          <i class="icon-footer fa fa-phone"></i>098 729 26 24<br>
+          <i class="icon-footer fa-solid fa-envelope"></i>hamic@hus.edu.vn
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    </div>
+    <!--End 11-->
+
+    <!-- 
  Begin countdown
    <div class="container1">
     <div id="countdown">
@@ -684,10 +702,10 @@ if (distance < 0) {
 }, 1000);
 </script>
 End countdown -->
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </main>
-<!-- End main -->
-<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  <!-- End main -->
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
-</html>
 
+</html>
