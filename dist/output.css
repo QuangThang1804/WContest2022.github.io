@@ -3089,11 +3089,6 @@ p {
   clear:both;
 }
 
-
-.container1{
-  height: 200px;
-}
-
 .background-web {
   position: fixed;
   top: 0;
@@ -3112,6 +3107,13 @@ p {
   font-weight: 600;
   line-height: 1.3;
   color: rgb(26 35 126);
+}
+
+#TheLe,
+#TieuChi,
+#GiaiThuong,
+#DoiTac, #FAQ {
+  padding-top: 110px;
 }
 
 .criteria,
@@ -3219,7 +3221,7 @@ p {
 
 .advisory-and-jury .bancovan,
 .advisory-and-jury .bantochuc {
-  padding: 32px 0;
+  padding: 90px 0 32px;
 }
 
 .advisory-and-jury .about-member .hang2,
@@ -3322,7 +3324,6 @@ p {
     margin: 16px 0;
     padding: 8px 0;
     border-bottom: 2px solid rgb(26 86 219);
-    /* border: solid; */
   }
 
   .quyenloi .noi_dung_quyen_loi {
