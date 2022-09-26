@@ -19,8 +19,8 @@
     <nav class="p-2 bg-white border-gray-200">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="#" class="flex items-center">
-              <img src="./src/img/logo.png" class="h-6 sm:h-10" alt="HAMIC Logo">
-              <span class="self-center text-xl font-semibold whitespace-nowrap">WContest2022</span>
+              <img src="./src/img/photosmile.vn_.png" class="h-7 sm:h-10 rounded-full" alt="HAMIC Logo">
+              <span class="self-center text-xl font-semibold whitespace-nowrap pl-2">WContest2022</span>
           </a>
           <div class="flex md:order-2">
             <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 hover:ring-4 hover:ring-blue-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"><a href=" https://bit.ly/dangkyWContest202" class="text-white">Đăng ký</a></button>
@@ -46,7 +46,7 @@
                           <a href="#TheLe" class="block py-2 px-4 hover:bg-gray-100">Hình thức tham gia</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-4 hover:bg-gray-100">Tiêu chí đánh giá</a>
+                            <a href="#TieuChi" class="block py-2 px-4 hover:bg-gray-100">Tiêu chí đánh giá</a>
                         </li>
                       </ul>
                   </div>
@@ -60,10 +60,10 @@
                   <div id="dropdownNavbar1" class="invisible group-focus-within:visible z-10 sm:w-44 w-full font-normal bg-white rounded divide-y divide-gray-100 shadow block" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383px, 66px, 0px);">
                       <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                         <li>
-                          <a href="#" class="block py-2 px-4 hover:bg-gray-100">Ban Tổ chức</a>
+                          <a href="#BTC" class="block py-2 px-4 hover:bg-gray-100">Ban Tổ chức</a>
                         </li>
                         <li>
-                          <a href="#" class="block py-2 px-4 hover:bg-gray-100">Ban Cố vấn</a>
+                          <a href="#BCV" class="block py-2 px-4 hover:bg-gray-100">Ban Cố vấn</a>
                         </li>
                         <li>
                           <a href="#" class="block py-2 px-4 hover:bg-gray-100">Ban Giám khảo</a>
@@ -160,7 +160,7 @@
       </div> 
 
       <!--Begin 4-->
-      <div class = "criteria">
+      <div id="TieuChi" class = "criteria">
         <h2 class="header">TIÊU CHÍ ĐÁNH GIÁ</h2>
         <div class="row2 content-criteria">
           <ul class="list-criteria">
@@ -172,8 +172,7 @@
         </div>
 
         <div class="row2 animation">
-          <lottie-player src="https://lottie.host/4ed60351-fcab-4314-aa5d-b8f871b463b1/2flxJEgYc2.json"
-           background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+          <lottie-player src="./src/animation/fly.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
         </div>
         <div class="clear"></div>
     </div>
@@ -181,12 +180,16 @@
 
     <!-- Begin giaithuong -->
     <div class="giaithuong">
+      <div>
+      </div>
     <h2 class="header">GIẢI THƯỞNG</h2>
 <!-- <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_y0mCTl.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player> -->
         <div class="hang1">
             <div class="phanthuong">
-                <p class="ten_giai_thuong">GIẢI NHẤT</p>
-                <p class="tong_gia_tri">Tổng trị giá 53.500.000 đồng</p>
+            <div class="inline-block">
+              <lottie-player src="https://assets5.lottiefiles.com/temp/lf20_ZtX97R.json"  background="transparent"  speed="1"  style="width: 350px; height: 250px;"  loop  autoplay></lottie-player>
+            </div>
+                <p class="tong_gia_tri !-mt-8">Tổng trị giá 53.500.000 đồng</p>
                 <p class="giai_thuong_gom">
                     <ul>
                         <li>Huy chương Vàng, giấy chứng nhận và 4.000.000 VNĐ tiền mặt</li>
@@ -199,7 +202,9 @@
 
         <div class="hang2 row2">
             <div class="phanthuong">
-                <p class="ten_giai_thuong shadow-xl text-red-500">GIẢI NHÌ</p>
+              <div class="inline-block">
+                <lottie-player src="./src/animation/silver.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+                  </div>
                 <p class="tong_gia_tri">Tổng trị giá 49.500.000 đồng</p>
                 <p class="giai_thuong_gom">
                     <ul>
@@ -212,7 +217,9 @@
             </div>
 
             <div class="phanthuong">
-                <p class="ten_giai_thuong">GIẢI BA</p>
+                <div class="inline-block">
+              <lottie-player src="./src/animation/brown.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+                </div>
                 <p class="tong_gia_tri">Tổng trị giá 40.000.000 đồng</p>
                 <p class="giai_thuong_gom">
                     <ul>
@@ -226,7 +233,10 @@
 
         <div class="hang3 row2">
             <div class="phanthuong">
-                <p class="ten_giai_thuong">GIẢI KHUYẾN KHÍCH</p>
+              <div class="inline-block">
+                <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_kpak4iic.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+                <p class="ten_giai_thuong bg-red-400 text-white">GIẢI KHUYẾN KHÍCH</p>       
+              </div>
                 <p class="tong_gia_tri">Tổng trị giá 3.500.000 đồng</p>
                 <p class="giai_thuong_gom">
                     <ul>
@@ -236,7 +246,10 @@
             </div>
 
             <div class="phanthuong">
-                <p class="ten_giai_thuong">GIẢI BÌNH CHỌN</p>
+              <div class="inline-block">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_o7sutfbq.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+                <p class="ten_giai_thuong bg-blue-400 text-white">GIẢI BÌNH CHỌN</p>     
+              </div>
                 <p class="tong_gia_tri">Tổng trị giá 2.500.000 đồng</p>
                 <p class="giai_thuong_gom">
                     <ul>
@@ -253,11 +266,11 @@
 
     <!--begin 7-->
       <div class="advisory-and-jury">
-        <div class="bantochuc">
+        <div id="BTC" class="bantochuc">
         <h2 class="header text-sky-500">BAN TỔ CHỨC</h2>
             <div class="list-member">
                 <div class="about-member-bantochuc">
-                    <img src="/src/img/logo.png" alt="CLB Toán Tin HAMIC" class="member-img-bantochuc scale-50">
+                    <img src="/src/img/logo.png" alt="CLB Toán Tin HAMIC" class="member-img-bantochuc">
                     <p class="member-name-bantochuc"> CLB Toán Tin HAMIC</p>
                     <p class="member-position-bantochuc">CLB học thuật về toán học và công nghệ thông tin duy nhất tại HUS</p>
                 </div>
@@ -309,7 +322,7 @@
         </div>
       -->
 
-        <div class="bancovan">
+        <div id="BCVs" class="bancovan">
             <h2 class = "header">BAN CỐ VẤN CHUYÊN MÔN</h2>
             <!-- <p class = "about-paragraph">Đồng hành cùng các bạn thí sinh trong suốt quá trình thi không thể không kể đến những anh chị trong ban cố vấn chuyên môn vô cùng nhiệt huyết, cụ thể là:</p> -->
             <div class="list-member">

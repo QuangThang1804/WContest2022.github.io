@@ -1950,6 +1950,10 @@ p {
   margin-right: auto;
 }
 
+.\!-mt-8 {
+  margin-top: -2rem !important;
+}
+
 .ml-1\.5 {
   margin-left: 0.375rem;
 }
@@ -2028,6 +2032,14 @@ p {
 
 .h-4 {
   height: 1rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-7 {
+  height: 1.75rem;
 }
 
 .min-h-screen {
@@ -2226,6 +2238,10 @@ p {
   white-space: nowrap;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -2236,10 +2252,6 @@ p {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-l-lg {
@@ -2417,6 +2429,10 @@ p {
   padding-bottom: 0.75rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -2565,11 +2581,6 @@ p {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(240 82 82 / var(--tw-text-opacity));
 }
 
 .text-sky-500 {
@@ -3083,8 +3094,15 @@ p {
   height: 200px;
 }
 
-#countdown{
-
+.background-web {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  /* padding-left: 40px; */
+  /* background-color: #16BDCA; */
 }
 
 .header{
@@ -3136,6 +3154,8 @@ p {
 /* end 4 */
 
  /* begin giaithuong */
+ 
+
  .giaithuong {
   user-select: none;
   text-align: center;
@@ -3151,9 +3171,7 @@ p {
 .giaithuong .ten_giai_thuong {
   margin: 8px;
   padding: 8px 16px;
-  background-color: lightgray;
   font-weight: 600;
-  border: 1px solid #7d7d7d;
   display: inline-block;
   border-radius: 18px;
   box-shadow: 0px 0 2px rgb(0 0 0 / 30%);
@@ -3183,6 +3201,7 @@ p {
 .giaithuong .hang3 ul {
   text-align: center;
 }
+
 /* end giaithuong */
 
 /* begin 7 */
@@ -3209,7 +3228,7 @@ p {
   padding-top: 32px;
   float: left;
   width: 45%;
-  text-align: center;
+  text-align: -webkit-center;
   margin: 0 28px 16px;
 }
 
@@ -3454,6 +3473,10 @@ p {
   .about-member .member-position{
     padding: 0px 4.13%;
   }
+
+  .quyenloi .row2 {
+    padding: 0 18px 16px;
+  }
 }
 
 /*Máy tính dell(1366 x 768)*/
@@ -3563,6 +3586,7 @@ p {
 
   #main {
     margin: 0px -36px;
+    z-index: 0;
   }
 
   .criteria,
