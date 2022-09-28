@@ -518,6 +518,10 @@
     z-index: 0;
   }
 
+  .criteria .animation {
+    padding: 0;
+  }
+
   .criteria,
   .advisory-and-jury .about-paragraph {
     margin: 32px 64px;
